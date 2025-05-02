@@ -1,18 +1,18 @@
 //
 //  FileHandle+Extensions.swift
-//  WhiskyKit
+//  PortKit
 //
-//  This file is part of Whisky.
+//  This file is part of Port.
 //
-//  Whisky is free software: you can redistribute it and/or modify it under the terms
+//  Port is free software: you can redistribute it and/or modify it under the terms
 //  of the GNU General Public License as published by the Free Software Foundation,
 //  either version 3 of the License, or (at your option) any later version.
 //
-//  Whisky is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+//  Port is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
 //  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 //  See the GNU General Public License for more details.
 //
-//  You should have received a copy of the GNU General Public License along with Whisky.
+//  You should have received a copy of the GNU General Public License along with Port.
 //  If not, see https://www.gnu.org/licenses/.
 //
 
@@ -48,7 +48,7 @@ extension FileHandle {
         var header = String()
         let macOSVersion = ProcessInfo.processInfo.operatingSystemVersion
 
-        header += "Whisky Version: \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] ?? "")\n"
+        header += "Port Version: \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] ?? "")\n"
         header += "Date: \(ISO8601DateFormatter().string(from: Date.now))\n"
         header += "macOS Version: \(macOSVersion.majorVersion).\(macOSVersion.minorVersion).\(macOSVersion.patchVersion)\n\n"
         write(line: header)
@@ -75,7 +75,7 @@ extension FileHandle {
         header += "Bottle URL: \(bottle.url.path)\n\n"
 
         if let version = WhiskyWineInstaller.whiskyWineVersion() {
-            header += "WhiskyWine Version: \(version.major).\(version.minor).\(version.patch)\n"
+            header += "PortWine Version: \(version.major).\(version.minor).\(version.patch)\n"
         }
         header += "Windows Version: \(bottle.settings.windowsVersion)\n"
         header += "Enhanced Sync: \(bottle.settings.enhancedSync)\n\n"

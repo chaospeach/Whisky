@@ -56,7 +56,7 @@
 		8C2AEFC82AED79B700CB568F /* WhiskyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8C2AEFC72AED79B700CB568F /* WhiskyKit */; };
 		8C2AEFCA2AED79CD00CB568F /* WhiskyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8C2AEFC92AED79CD00CB568F /* WhiskyKit */; };
 		8C73E1342AF472FC00B6FB45 /* ProgramMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C73E1332AF472FC00B6FB45 /* ProgramMenuView.swift */; };
-		8CB681E52AED7C6F0018D319 /* WhiskyKit in Resources */ = {isa = PBXBuildFile; fileRef = 8CB681E42AED7C6F0018D319 /* WhiskyKit */; };
+		8CB681E52AED7C6F0018D319 /* PortKit in Resources */ = {isa = PBXBuildFile; fileRef = 8CB681E42AED7C6F0018D319 /* PortKit */; };
 		8CB681E72AED7CD00018D319 /* WhiskyKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8CB681E62AED7CD00018D319 /* WhiskyKit */; };
 		AB0BCABD2B61036E00E21C31 /* RunningProcessesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0BCABC2B61036E00E21C31 /* RunningProcessesView.swift */; };
 		DB696FC82AFAE5DA0037EB2F /* PinCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB696FC72AFAE5DA0037EB2F /* PinCreationView.swift */; };
@@ -130,7 +130,7 @@
 		6E40495729CCA19C006E3F1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6E40495929CCA19C006E3F1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E40495C29CCA19C006E3F1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		6E40495E29CCA19C006E3F1B /* Whisky.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Whisky.entitlements; sourceTree = "<group>"; };
+		6E40495E29CCA19C006E3F1B /* Port.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Port.entitlements; sourceTree = "<group>"; };
 		6E40498029CCA8B0006E3F1B /* BottleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleView.swift; sourceTree = "<group>"; };
 		6E40498229CCA91B006E3F1B /* Bottle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bottle+Extensions.swift"; sourceTree = "<group>"; };
 		6E49E0202AECB7DB00009CAC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -154,10 +154,10 @@
 		6EFDF64D2AAE2DA800EF622F /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		6EFDF6502AAE2DA800EF622F /* ThumbnailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailProvider.swift; sourceTree = "<group>"; };
 		6EFDF6522AAE2DA800EF622F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6EFDF6532AAE2DA800EF622F /* WhiskyThumbnail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WhiskyThumbnail.entitlements; sourceTree = "<group>"; };
+		6EFDF6532AAE2DA800EF622F /* PortThumbnail.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PortThumbnail.entitlements; sourceTree = "<group>"; };
 		6EFDF6652AAE303300EF622F /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		8C73E1332AF472FC00B6FB45 /* ProgramMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramMenuView.swift; sourceTree = "<group>"; };
-		8CB681E42AED7C6F0018D319 /* WhiskyKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = WhiskyKit; sourceTree = "<group>"; };
+		8CB681E42AED7C6F0018D319 /* PortKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = PortKit; sourceTree = "<group>"; };
 		AB0BCABC2B61036E00E21C31 /* RunningProcessesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningProcessesView.swift; sourceTree = "<group>"; };
 		DB696FC72AFAE5DA0037EB2F /* PinCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinCreationView.swift; sourceTree = "<group>"; };
 		EEA5A2452A31DD65008274AE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -264,10 +264,10 @@
 		6E40494929CCA19C006E3F1B = {
 			isa = PBXGroup;
 			children = (
-				6E40495429CCA19C006E3F1B /* Whisky */,
-				6E70A4992A9A2197007799E9 /* WhiskyCmd */,
-				6EFDF64F2AAE2DA800EF622F /* WhiskyThumbnail */,
-				8CB681E42AED7C6F0018D319 /* WhiskyKit */,
+				6E40495429CCA19C006E3F1B /* Port */,
+				6E70A4992A9A2197007799E9 /* PortCmd */,
+				6EFDF64F2AAE2DA800EF622F /* PortThumbnail */,
+				8CB681E42AED7C6F0018D319 /* PortKit */,
 				6E2FB15F2B589A9000E344C6 /* Libraries */,
 				6E40495329CCA19C006E3F1B /* Products */,
 				6E5967692A9A424900D64F70 /* Frameworks */,
@@ -286,7 +286,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6E40495429CCA19C006E3F1B /* Whisky */ = {
+		6E40495429CCA19C006E3F1B /* Port */ = {
 			isa = PBXGroup;
 			children = (
 				EEA5A2452A31DD65008274AE /* AppDelegate.swift */,
@@ -296,11 +296,11 @@
 				6E5197CD29D71FCD00CF655E /* Views */,
 				6E40495929CCA19C006E3F1B /* Assets.xcassets */,
 				6E899D1129CFC41D00A4A083 /* Info.plist */,
-				6E40495E29CCA19C006E3F1B /* Whisky.entitlements */,
+				6E40495E29CCA19C006E3F1B /* Port.entitlements */,
 				6E40495B29CCA19C006E3F1B /* Preview Content */,
 				6EB58AC82AEACE5E00B1ED3F /* Localizable.xcstrings */,
 			);
-			path = Whisky;
+			path = Port;
 			sourceTree = "<group>";
 		};
 		6E40495B29CCA19C006E3F1B /* Preview Content */ = {
@@ -375,23 +375,23 @@
 			path = Setup;
 			sourceTree = "<group>";
 		};
-		6E70A4992A9A2197007799E9 /* WhiskyCmd */ = {
+		6E70A4992A9A2197007799E9 /* PortCmd */ = {
 			isa = PBXGroup;
 			children = (
 				6E70A49A2A9A2197007799E9 /* Main.swift */,
 			);
-			path = WhiskyCmd;
+			path = PortCmd;
 			sourceTree = "<group>";
 		};
-		6EFDF64F2AAE2DA800EF622F /* WhiskyThumbnail */ = {
+		6EFDF64F2AAE2DA800EF622F /* PortThumbnail */ = {
 			isa = PBXGroup;
 			children = (
 				6EFDF6502AAE2DA800EF622F /* ThumbnailProvider.swift */,
 				6EFDF6522AAE2DA800EF622F /* Info.plist */,
-				6EFDF6532AAE2DA800EF622F /* WhiskyThumbnail.entitlements */,
+				6EFDF6532AAE2DA800EF622F /* PortThumbnail.entitlements */,
 				6EFDF6652AAE303300EF622F /* Icons.xcassets */,
 			);
-			path = WhiskyThumbnail;
+			path = PortThumbnail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,7 +475,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					6E40495129CCA19C006E3F1B = {
 						CreatedOnToolsVersion = 14.2;
@@ -542,7 +542,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CB681E52AED7C6F0018D319 /* WhiskyKit in Resources */,
+				8CB681E52AED7C6F0018D319 /* PortKit in Resources */,
 				6E40495D29CCA19C006E3F1B /* Preview Assets.xcassets in Resources */,
 				6EB58AC92AEACE5E00B1ED3F /* Localizable.xcstrings in Resources */,
 				6E40495A29CCA19C006E3F1B /* Assets.xcassets in Resources */,
@@ -654,7 +654,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -718,7 +717,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -774,27 +772,26 @@
 		6E40497829CCA19D006E3F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Whisky/Whisky.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Port/Port.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"Whisky/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Port/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = 7P8257CDY9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Whisky/Info.plist;
+				INFOPLIST_FILE = Port/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Port;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
-				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Whisky needs to access Terminal to launcher processes in a Terminal window.";
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Port needs to access Terminal to launcher processes in a Terminal window.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "A Windows application is trying to access the camera.";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © Whisky";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © Chaospeach";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "A Windows application is trying to access the microphone.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -815,27 +812,26 @@
 		6E40497929CCA19D006E3F1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Whisky/Whisky.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Port/Port.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"Whisky/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Port/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = 7P8257CDY9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Whisky/Info.plist;
+				INFOPLIST_FILE = Port/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Port;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
-				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Whisky needs to access Terminal to launcher processes in a Terminal window.";
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Port needs to access Terminal to launcher processes in a Terminal window.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "A Windows application is trying to access the camera.";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © Whisky";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © Chaospeach";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "A Windows application is trying to access the microphone.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -856,7 +852,6 @@
 		6E70A49C2A9A2197007799E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
@@ -883,7 +878,6 @@
 		6E70A49D2A9A2197007799E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
@@ -910,7 +904,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CODE_SIGN_ENTITLEMENTS = WhiskyThumbnail/WhiskyThumbnail.entitlements;
+				CODE_SIGN_ENTITLEMENTS = PortThumbnail/PortThumbnail.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -921,8 +915,8 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WhiskyThumbnail/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WhiskyThumbnail;
+				INFOPLIST_FILE = PortThumbnail/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PortThumbnail;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -946,7 +940,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CODE_SIGN_ENTITLEMENTS = WhiskyThumbnail/WhiskyThumbnail.entitlements;
+				CODE_SIGN_ENTITLEMENTS = PortThumbnail/PortThumbnail.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -957,8 +951,8 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WhiskyThumbnail/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WhiskyThumbnail;
+				INFOPLIST_FILE = PortThumbnail/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PortThumbnail;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

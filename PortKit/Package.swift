@@ -1,33 +1,33 @@
 // swift-tools-version: 5.9
 //
 //  PortableExecutable.swift
-//  WhiskyKit
+//  PortKit
 //
-//  This file is part of Whisky.
+//  This file is part of Port.
 //
-//  Whisky is free software: you can redistribute it and/or modify it under the terms
+//  Port is free software: you can redistribute it and/or modify it under the terms
 //  of the GNU General Public License as published by the Free Software Foundation,
 //  either version 3 of the License, or (at your option) any later version.
 //
-//  Whisky is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+//  Port is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
 //  without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 //  See the GNU General Public License for more details.
 //
-//  You should have received a copy of the GNU General Public License along with Whisky.
+//  You should have received a copy of the GNU General Public License along with Port.
 //  If not, see https://www.gnu.org/licenses/.
 //
 
 import PackageDescription
 
 let package = Package(
-    name: "WhiskyKit",
+    name: "PortKit",
     platforms: [
-        .macOS(.v14)
+        .macOS(.v15)
     ],
     products: [
         .library(
-            name: "WhiskyKit",
-            targets: ["WhiskyKit"]
+            name: "PortKit",
+            targets: ["PortKit"]
         )
     ],
     dependencies: [
@@ -35,7 +35,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "WhiskyKit",
+            name: "PortKit",
             dependencies: ["SemanticVersion"]
         )
     ],
