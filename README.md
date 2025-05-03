@@ -1,6 +1,6 @@
 <div align="center">
 
-  # Port 🍷 
+  # Armagnac 🍷 
   ~~*Wine but a bit stronger*~~    
   *Wine but aged a bit longer*
   
@@ -10,7 +10,7 @@
 
 ## Notice ⚠️
 
-Port is an adventure in getting a better understanding of Swift, Wine, and Mac Gaming in general. The stability of this repository is not guaranteed, nor is it guaranteed to be consistently maintained.
+Armagnac is an adventure in getting a better understanding of Swift, Wine, and Mac Gaming in general. The stability of this repository is not guaranteed, nor is it guaranteed to be consistently maintained.
 
 ## The People Pledge
 We support "The People Pledge", click the badge for more information.
@@ -31,24 +31,9 @@ We support "The People Pledge", click the badge for more information.
 >
 > We commit to treating others fairly and rejecting prejudice in all its forms.
 
-<!-- ## Port Features
-
-<img width="650" alt="Config" src="https://github.com/Whisky-App/Whisky/assets/42140194/d0a405e8-76ee-48f0-92b5-165d184a576b">
-
-Familiar UI that integrates seamlessly with macOS
-
-
-  <img width="650" alt="New Bottle" src="https://github.com/Whisky-App/Whisky/assets/42140194/ed1a0d69-d8fb-442b-9330-6816ba8981ba">
-
-  One-click bottle creation and management
-
-<img width="650" alt="debug" src="https://user-images.githubusercontent.com/42140194/229176642-57b80801-d29b-4123-b1c2-f3b31408ffc6.png">
-
-Debug and profile with ease -->
-
 ---
 
-Port provides a clean and easy to use graphical wrapper for Wine built in native SwiftUI. You can make and manage bottles, install and run Windows apps and games, and unlock the full potential of your Mac with no technical knowledge required. Port is built on top of CrossOver 22.1.1, and Apple's own `Game Porting Toolkit`.
+Armagnac provides a clean and easy to use graphical wrapper for Wine built in native SwiftUI. You can make and manage bottles, install and run Windows apps and games, and unlock the full potential of your Mac with no technical knowledge required. Armagnac is built on top of CrossOver 22.1.1, and Apple's own `Game Porting Toolkit`.
 
 <!-- Translated on [Crowdin](https://crowdin.com/project/whisky). -->
 
@@ -58,15 +43,11 @@ Port provides a clean and easy to use graphical wrapper for Wine built in native
 - CPU: Apple Silicon (M-series chips)
 - OS: macOS Sonoma 15.0 or later
 
-## My game isn't working!
-
-Some games need special steps to get working. Check out the [wiki](https://github.com/chaospeach/Port/wiki/Game-Support).
-
 ---
 
 ## Credits & Acknowledgments
 
-Port is possible thanks to the magic of several projects:
+Armagnac is possible thanks to the magic of several projects:
 
 - [msync](https://github.com/marzent/wine-msync) by marzent
 - [DXVK-macOS](https://github.com/Gcenx/DXVK-macOS) by Gcenx and doitsujin
@@ -91,7 +72,7 @@ Special thanks to Gcenx, ohaiibuzzle, and Nat Brown for their support and contri
         </picture>
     </td>
     <td>
-        Port doesn't exist without CrossOver. Support the work of CodeWeavers ✅
+        Armagnac doesn't exist without CrossOver. Support the work of CodeWeavers ✅
     </td>
   </tr>
 </table>

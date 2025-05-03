@@ -1,4 +1,4 @@
 files:
-  - source: /Port/Localizable.xcstrings
-    translation: /Port/Localizable.xcstrings
+  - source: /Armagnac/Localizable.xcstrings
+    translation: /Armagnac/Localizable.xcstrings
     multilingual: 1
