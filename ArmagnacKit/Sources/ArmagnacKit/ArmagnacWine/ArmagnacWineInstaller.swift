@@ -32,7 +32,7 @@ public class WhiskyWineInstaller {
     public static let binFolder: URL = libraryFolder.appending(path: "Wine").appending(path: "bin")
 
     public static func isWhiskyWineInstalled() -> Bool {
-        return whiskyWineVersion() != nil
+        return armagnacWineVersion() != nil
     }
 
     public static func install(from: URL) {
@@ -61,8 +61,9 @@ public class WhiskyWineInstaller {
     }
 
     public static func shouldUpdateWhiskyWine() async -> (Bool, SemanticVersion) {
+        // swiftlint:disable:next line_length
         let versionPlistURL = "https://raw.githubusercontent.com/chaospeach/Armagnac/refs/heads/next/Assets/data/ArmagnacWineVersion.plist"
-        let localVersion = whiskyWineVersion()
+        let localVersion = armagnacWineVersion()
 
         var remoteVersion: SemanticVersion?
 
@@ -72,7 +73,7 @@ public class WhiskyWineInstaller {
                     do {
                         if error == nil, let data = data {
                             let decoder = PropertyListDecoder()
-                            let remoteInfo = try decoder.decode(WhiskyWineVersion.self, from: data)
+                            let remoteInfo = try decoder.decode(ArmagnacWineVersion.self, from: data)
                             let remoteVersion = remoteInfo.version
 
                             continuation.resume(returning: remoteVersion)
@@ -99,15 +100,15 @@ public class WhiskyWineInstaller {
         return (false, SemanticVersion(0, 0, 0))
     }
 
-    public static func whiskyWineVersion() -> SemanticVersion? {
+    public static func armagnacWineVersion() -> SemanticVersion? {
         do {
             let versionPlist = libraryFolder
-                .appending(path: "WhiskyWineVersion")
+                .appending(path: "ArmagnacWineVersion")
                 .appendingPathExtension("plist")
 
             let decoder = PropertyListDecoder()
             let data = try Data(contentsOf: versionPlist)
-            let info = try decoder.decode(WhiskyWineVersion.self, from: data)
+            let info = try decoder.decode(ArmagnacWineVersion.self, from: data)
             return info.version
         } catch {
             print(error)
@@ -116,6 +117,6 @@ public class WhiskyWineInstaller {
     }
 }
 
-struct WhiskyWineVersion: Codable {
+struct ArmagnacWineVersion: Codable {
     var version: SemanticVersion = SemanticVersion(1, 0, 0)
 }
