@@ -15,7 +15,7 @@ Armagnac is an adventure in getting a better understanding of Swift, Wine, and M
 ## The People Pledge
 We support "The People Pledge", click the badge for more information.
 
-<div style="align: center;">
+<div align="center">
   <a class="no-underline" href="https://people.pledge.party/">
     <img 
       style="display: block; margin: 0 auto;"
@@ -62,17 +62,11 @@ Armagnac is possible thanks to the magic of several projects:
 Special thanks to Gcenx, ohaiibuzzle, and Nat Brown for their support and contributions!
 
 ---
-
-<table>
-  <tr>
-    <td>
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./images/cw-dark.png">
-          <img src="./images/cw-light.png" width="500">
-        </picture>
-    </td>
-    <td>
-        Armagnac doesn't exist without CrossOver. Support the work of CodeWeavers ✅
-    </td>
-  </tr>
-</table>
+<br />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./Assets/images/cw-dark.png">
+  <img src="./Assets/images/cw-light.png" width="500">
+</picture>
+<br /><br />
+    
+Armagnac doesn't exist without CrossOver. Support the work of [CodeWeavers](https://www.codeweavers.com/")</a> ✅

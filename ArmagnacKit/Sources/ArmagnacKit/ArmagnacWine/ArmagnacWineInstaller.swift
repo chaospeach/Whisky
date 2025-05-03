@@ -1,5 +1,5 @@
 //
-//  WhiskyWineInstaller.swift
+//  ArmagnacWineInstaller.swift
 //  ArmagnacKit
 //
 //  This file is part of Armagnac.
@@ -61,7 +61,7 @@ public class WhiskyWineInstaller {
     }
 
     public static func shouldUpdateWhiskyWine() async -> (Bool, SemanticVersion) {
-        let versionPlistURL = "https://data.getwhisky.app/Wine/WhiskyWineVersion.plist"
+        let versionPlistURL = "https://raw.githubusercontent.com/chaospeach/Armagnac/refs/heads/next/Assets/data/ArmagnacWineVersion.plist"
         let localVersion = whiskyWineVersion()
 
         var remoteVersion: SemanticVersion?
