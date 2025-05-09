@@ -35,7 +35,7 @@ We support "The People Pledge", click the badge for more information.
 
 ## System Requirements
 - CPU: Apple Silicon (M-series chips)
-- OS: macOS Sonoma 15.0 or later
+- OS: macOS Sonoma 14.6 or later
 
 ---
 

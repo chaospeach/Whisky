@@ -40,9 +40,9 @@ struct SetupView: View {
                         case .rosetta:
                             RosettaView(path: $path, showSetup: $showSetup)
                         case .armagnacWineDownload:
-                            armagnacWineDownloadView(tarLocation: $tarLocation, path: $path)
+                            ArmagnacWineDownloadView(tarLocation: $tarLocation, path: $path)
                         case .armagnacWineInstall:
-                            armagnacWineInstallView(tarLocation: $tarLocation, path: $path, showSetup: $showSetup)
+                            ArmagnacWineInstallView(tarLocation: $tarLocation, path: $path, showSetup: $showSetup)
                         }
                     }
             }
