@@ -21,7 +21,7 @@ import AppKit
 
 class ArmagnacCmd {
     static func install() async {
-        let armagnacCmdURL = Bundle.main.url(forResource: "WhiskyCmd", withExtension: nil)
+        let armagnacCmdURL = Bundle.main.url(forResource: "ArmagnacCmd", withExtension: nil)
 
         if let armagnacCmdURL = armagnacCmdURL {
             // swiftlint:disable line_length

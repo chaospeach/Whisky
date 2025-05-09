@@ -1,5 +1,5 @@
 //
-//  WhiskyWineInstallView.swift
+//  ArmagnacWineInstallView.swift
 //  Armagnac
 //
 //  This file is part of Armagnac.
@@ -19,7 +19,7 @@
 import SwiftUI
 import ArmagnacKit
 
-struct WhiskyWineInstallView: View {
+struct ArmagnacWineInstallView: View {
     @State var installing: Bool = true
     @Binding var tarLocation: URL
     @Binding var path: [SetupStage]
@@ -28,10 +28,10 @@ struct WhiskyWineInstallView: View {
     var body: some View {
         VStack {
             VStack {
-                Text("setup.whiskywine.install")
+                Text("setup.armagnacwine.install")
                     .font(.title)
                     .fontWeight(.bold)
-                Text("setup.whiskywine.install.subtitle")
+                Text("setup.armagnacwine.install.subtitle")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                 Spacer()

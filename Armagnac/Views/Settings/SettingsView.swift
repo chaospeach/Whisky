@@ -20,7 +20,7 @@ import SwiftUI
 import ArmagnacKit
 
 struct SettingsView: View {
-    @AppStorage("SUEnableAutomaticChecks") var whiskyUpdate = true
+    @AppStorage("SUEnableAutomaticChecks") var armagnacUpdate = true
     @AppStorage("killOnTerminate") var killOnTerminate = true
     @AppStorage("checkArmagnacWineUpdates") var checkArmagnacWineUpdates = true
     @AppStorage("defaultBottleLocation") var defaultBottleLocation = BottleData.defaultBottleDir
@@ -48,8 +48,8 @@ struct SettingsView: View {
                 }
             }
             Section("settings.updates") {
-                Toggle("settings.toggle.whisky.updates", isOn: $whiskyUpdate)
-                Toggle("settings.toggle.whiskywine.updates", isOn: $checkArmagnacWineUpdates)
+                Toggle("settings.toggle.armagnac.updates", isOn: $armagnacUpdate)
+                Toggle("settings.toggle.armagnacwine.updates", isOn: $checkArmagnacWineUpdates)
             }
         }
         .formStyle(.grouped)

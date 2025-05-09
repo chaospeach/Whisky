@@ -27,14 +27,14 @@ body:
     id: logs
     attributes:
       label: Logs
-      description: Please provide the logs from the launched Wine process. These can be found by pressing `CMD + L` in Whisky.
+      description: Please provide the logs from the launched Wine process. These can be found by pressing `CMD + L` in Armagnac.
       render: bash
     validations:
       required: true
   - type: dropdown
-    id: whisky-version
+    id: armagnac-version
     attributes:
-      label: What version of Whisky are you using?
+      label: What version of Armagnac are you using?
       options:
         - "2.3.2"
         - "<2.3.2"
@@ -46,6 +46,7 @@ body:
       label: What version of macOS are you using?
       options:
         - "Sonoma (macOS 14)"
+        - "Sonoma (macOS 15)"
     validations:
       required: true
   - type: checkboxes

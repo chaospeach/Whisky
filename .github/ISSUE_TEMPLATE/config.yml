@@ -1,4 +1,4 @@
 blank_issues_enabled: false
-- name: Discord Support
-    url: https://discord.gg/K4AQukwAke
+- name: Support
+    url: https://github.com/chaospeach/Armagnac
     about: Please ask for support first to confirm the issue before submitting a report.

@@ -1,5 +1,5 @@
 //
-//  WhiskyWineDownloadView.swift
+//  ArmagnacWineDownloadView.swift
 //  Armagnac
 //
 //  This file is part of Armagnac.
@@ -19,7 +19,7 @@
 import SwiftUI
 import ArmagnacKit
 
-struct WhiskyWineDownloadView: View {
+struct ArmagnacWineDownloadView: View {
     @State private var fractionProgress: Double = 0
     @State private var completedBytes: Int64 = 0
     @State private var totalBytes: Int64 = 0
@@ -32,10 +32,10 @@ struct WhiskyWineDownloadView: View {
     var body: some View {
         VStack {
             VStack {
-                Text("setup.whiskywine.download")
+                Text("setup.armagnacwine.download")
                     .font(.title)
                     .fontWeight(.bold)
-                Text("setup.whiskywine.download.subtitle")
+                Text("setup.armagnacwine.download.subtitle")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                 Spacer()
@@ -43,12 +43,12 @@ struct WhiskyWineDownloadView: View {
                     ProgressView(value: fractionProgress, total: 1)
                     HStack {
                         HStack {
-                            Text(String(format: String(localized: "setup.whiskywine.progress"),
+                            Text(String(format: String(localized: "setup.armagnacwine.progress"),
                                         formatBytes(bytes: completedBytes),
                                         formatBytes(bytes: totalBytes)))
                             + Text(String(" "))
                             + (shouldShowEstimate() ?
-                               Text(String(format: String(localized: "setup.whiskywine.eta"),
+                               Text(String(format: String(localized: "setup.armagnacwine.eta"),
                                            formatRemainingTime(remainingBytes: totalBytes - completedBytes)))
                                : Text(String()))
                             Spacer()
@@ -65,7 +65,7 @@ struct WhiskyWineDownloadView: View {
         .frame(width: 400, height: 200)
         .onAppear {
             Task {
-                if let url: URL = URL(string: "https://data.getwhisky.app/Wine/Libraries.tar.gz") {
+                if let url: URL = URL(string: "https://cdn.chaospea.ch/armagnac/wine/Libraries.tar.gz") {
                     downloadTask = URLSession(configuration: .ephemeral).downloadTask(with: url) { url, _, _ in
                         Task.detached {
                             await MainActor.run {

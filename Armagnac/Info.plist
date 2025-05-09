@@ -54,9 +54,9 @@
 		</dict>
 	</array>
 	<key>SUFeedURL</key>
-	<string>https://data.getwhisky.app/appcast.xml</string>
+	<string>https://github.com/chaospeach/Armagnac/blob/next/Assets/data/appcast.xml</string>
 	<key>SUPublicEDKey</key>
-	<string>tnZFAvPUfCpM7Tr7Sx5gKRm6BUQQ6htJQeOMP44evms=</string>
+	<string></string>
 	<key>UTExportedTypeDeclarations</key>
 	<array>
 		<dict>

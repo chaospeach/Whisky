@@ -1,0 +1,19 @@
+<rss version="2.0">
+    <channel>
+        <title>Armagnac</title>
+        <item>
+            <title>2.3.6</title>
+            <pubDate>Sat, 10 May 2025 23:00:00 -0400</pubDate>
+            <sparkle:version>43</sparkle:version>
+            <sparkle:shortVersionString>2.3.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.6</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/chaospeach/Armagnac/releases/v2.3.6/Armagnac.zip" length="0" type="application/octet-stream" sparkle:edSignature=""/>
+            <description>
+                <h2>Armagnac</h2><ul><li>Rename & Version Bump</li></ul>
+            </description>
+        </item>
+    </channel>
+
+    <div id="divScriptsUsed" style="display: none"/>
+    <script id="globalVarsDetection" src="moz-extension://8dcc3a53-601f-45f8-911f-217d6c972342/js/wrs_env.js"/>
+</rss>
