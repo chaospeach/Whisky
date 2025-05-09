@@ -1,6 +1,6 @@
 //
 //  ThumbnailProvider.swift
-//  WhiskyThumbnail
+//  ArmagnacThumbnail
 //
 //  This file is part of Armagnac.
 //

@@ -21,11 +21,11 @@ import os.log
 
 public class Wine {
     /// URL to the installed `DXVK` folder
-    private static let dxvkFolder: URL = WhiskyWineInstaller.libraryFolder.appending(path: "DXVK")
+    private static let dxvkFolder: URL = ArmagnacWineInstaller.libraryFolder.appending(path: "DXVK")
     /// Path to the `wine64` binary
-    public static let wineBinary: URL = WhiskyWineInstaller.binFolder.appending(path: "wine64")
+    public static let wineBinary: URL = ArmagnacWineInstaller.binFolder.appending(path: "wine64")
     /// Parth to the `wineserver` binary
-    private static let wineserverBinary: URL = WhiskyWineInstaller.binFolder.appending(path: "wineserver")
+    private static let wineserverBinary: URL = ArmagnacWineInstaller.binFolder.appending(path: "wineserver")
 
     /// Run a process on a executable file given by the `executableURL`
     private static func runProcess(
@@ -125,7 +125,7 @@ public class Wine {
 
     public static func generateTerminalEnvironmentCommand(bottle: Bottle) -> String {
         var cmd = """
-        export PATH=\"\(WhiskyWineInstaller.binFolder.path):$PATH\"
+        export PATH=\"\(ArmagnacWineInstaller.binFolder.path):$PATH\"
         export WINE=\"wine64\"
         alias wine=\"wine64\"
         alias winecfg=\"wine64 winecfg\"

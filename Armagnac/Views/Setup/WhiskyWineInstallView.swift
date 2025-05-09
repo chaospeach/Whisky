@@ -52,7 +52,7 @@ struct WhiskyWineInstallView: View {
         .frame(width: 400, height: 200)
         .onAppear {
             Task.detached {
-                await WhiskyWineInstaller.install(from: tarLocation)
+                await ArmagnacWineInstaller.install(from: tarLocation)
                 await MainActor.run {
                     installing = false
                 }

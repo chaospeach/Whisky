@@ -19,7 +19,7 @@
 import Foundation
 import SemanticVersion
 
-public class WhiskyWineInstaller {
+public class ArmagnacWineInstaller {
     /// The Armagnac application folder
     public static let applicationFolder = FileManager.default.urls(
         for: .applicationSupportDirectory, in: .userDomainMask
@@ -31,7 +31,7 @@ public class WhiskyWineInstaller {
     /// URL to the installed `wine` `bin` directory
     public static let binFolder: URL = libraryFolder.appending(path: "Wine").appending(path: "bin")
 
-    public static func isWhiskyWineInstalled() -> Bool {
+    public static func isArmagnacWineInstalled() -> Bool {
         return armagnacWineVersion() != nil
     }
 
@@ -48,7 +48,7 @@ public class WhiskyWineInstaller {
             try Tar.untar(tarBall: from, toURL: applicationFolder)
             try FileManager.default.removeItem(at: from)
         } catch {
-            print("Failed to install WhiskyWine: \(error)")
+            print("Failed to install ArmagnacWine: \(error)")
         }
     }
 
@@ -56,11 +56,11 @@ public class WhiskyWineInstaller {
         do {
             try FileManager.default.removeItem(at: libraryFolder)
         } catch {
-            print("Failed to uninstall WhiskyWine: \(error)")
+            print("Failed to uninstall ArmagnacWine: \(error)")
         }
     }
 
-    public static func shouldUpdateWhiskyWine() async -> (Bool, SemanticVersion) {
+    public static func shouldUpdateArmagnacWine() async -> (Bool, SemanticVersion) {
         // swiftlint:disable:next line_length
         let versionPlistURL = "https://raw.githubusercontent.com/chaospeach/Armagnac/refs/heads/next/Assets/data/ArmagnacWineVersion.plist"
         let localVersion = armagnacWineVersion()

@@ -19,7 +19,7 @@
 import SwiftUI
 
 extension Animation {
-    static var whiskyDefault: Animation {
+    static var armagnacDefault: Animation {
         .easeInOut(duration: 0.2)
     }
 }

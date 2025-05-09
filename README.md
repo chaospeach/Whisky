@@ -33,12 +33,6 @@ We support "The People Pledge", click the badge for more information.
 
 ---
 
-Armagnac provides a clean and easy to use graphical wrapper for Wine built in native SwiftUI. You can make and manage bottles, install and run Windows apps and games, and unlock the full potential of your Mac with no technical knowledge required. Armagnac is built on top of CrossOver 22.1.1, and Apple's own `Game Porting Toolkit`.
-
-<!-- Translated on [Crowdin](https://crowdin.com/project/whisky). -->
-
----
-
 ## System Requirements
 - CPU: Apple Silicon (M-series chips)
 - OS: macOS Sonoma 15.0 or later

@@ -101,18 +101,18 @@ struct ContentView: View {
                 }
             }
 
-            if !WhiskyWineInstaller.isWhiskyWineInstalled() {
+            if !ArmagnacWineInstaller.isArmagnacWineInstalled() {
                 showSetup = true
             }
             let task = Task.detached {
-                return await WhiskyWineInstaller.shouldUpdateWhiskyWine()
+                return await ArmagnacWineInstaller.shouldUpdateArmagnacWine()
             }
             let updateInfo = await task.value
             if updateInfo.0 {
                 let alert = NSAlert()
                 alert.messageText = String(localized: "update.whiskywine.title")
                 alert.informativeText = String(format: String(localized: "update.whiskywine.description"),
-                                               String(WhiskyWineInstaller.armagnacWineVersion()
+                                               String(ArmagnacWineInstaller.armagnacWineVersion()
                                                       ?? SemanticVersion(0, 0, 0)),
                                                String(updateInfo.1))
                 alert.alertStyle = .warning
@@ -122,7 +122,7 @@ struct ContentView: View {
                 let response = alert.runModal()
 
                 if response == .alertFirstButtonReturn {
-                    WhiskyWineInstaller.uninstall()
+                    ArmagnacWineInstaller.uninstall()
                     showSetup = true
                 }
             }

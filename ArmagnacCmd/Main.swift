@@ -199,7 +199,7 @@ extension Armagnac {
     }
 
     struct Install: ParsableCommand {
-        static let configuration = CommandConfiguration(abstract: "Install WhiskyWine.")
+        static let configuration = CommandConfiguration(abstract: "Install ArmagnacWine.")
 
         mutating func run() throws {
 
@@ -207,9 +207,9 @@ extension Armagnac {
     }
 
     struct Uninstall: ParsableCommand {
-        static let configuration = CommandConfiguration(abstract: "Uninstall WhiskyWine.")
+        static let configuration = CommandConfiguration(abstract: "Uninstall ArmagnacWine.")
 
-        @Flag(name: [.long, .short], help: "Uninstall WhiskyWine") var whiskyWine = false
+        @Flag(name: [.long, .short], help: "Uninstall ArmagnacWine") var armagnacWine = false
 
         mutating func run() throws {
 

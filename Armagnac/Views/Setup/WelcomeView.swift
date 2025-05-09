@@ -98,7 +98,7 @@ struct WelcomeView: View {
 
     func checkInstallStatus() {
         rosettaInstalled = Rosetta2.isRosettaInstalled
-        whiskyWineInstalled = WhiskyWineInstaller.isWhiskyWineInstalled()
+        whiskyWineInstalled = ArmagnacWineInstaller.isArmagnacWineInstalled()
     }
 }
 
@@ -146,7 +146,7 @@ struct InstallStatusView: View {
 
     func uninstall() {
         if name == "WhiskyWine" {
-            WhiskyWineInstaller.uninstall()
+            ArmagnacWineInstaller.uninstall()
         }
 
         shouldCheckInstallStatus.toggle()
