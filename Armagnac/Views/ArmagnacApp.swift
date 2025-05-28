@@ -49,9 +49,9 @@ struct ArmagnacApp: App {
         // Don't ask me how this works, it just does
         .handlesExternalEvents(matching: ["{same path of URL?}"])
         .commands {
-            CommandGroup(after: .appInfo) {
-                SparkleView(updater: updaterController.updater)
-            }
+//            CommandGroup(after: .appInfo) {
+//                SparkleView(updater: updaterController.updater)
+//            }
             CommandGroup(before: .systemServices) {
                 Divider()
                 Button("open.setup") {

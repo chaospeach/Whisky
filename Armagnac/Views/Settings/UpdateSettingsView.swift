@@ -1,5 +1,5 @@
 //
-//  SettingsView.swift
+//  UpdateSettingsView.swift
 //  Armagnac
 //
 //  This file is part of Armagnac.
@@ -19,30 +19,23 @@
 import SwiftUI
 import ArmagnacKit
 
-struct SettingsView: View {
+struct UpdateSettingsView: View {
+    @AppStorage("SUEnableAutomaticChecks") var armagnacUpdate = false
+    @AppStorage("checkArmagnacWineUpdates") var checkArmagnacWineUpdates = false
+
     var body: some View {
-        VStack {
-            TabView {
-
-                GeneralSettingsView().tabItem {
-                    Label("settings.tab.general.title", systemImage: "gearshape")
-                }
-                .frame(width: ViewWidth.medium)
-
-                WineSettingsView().tabItem {
-                    Label("settings.tab.wine.title", systemImage: "wineglass")
-                }
-                .frame(width: ViewWidth.medium)
-
-                UpdateSettingsView().tabItem {
-                    Label("settings.tab.updates.title", systemImage: "arrow.trianglehead.2.clockwise")
-                }
-                .frame(width: ViewWidth.medium)
-            }
+        Form {
+            Toggle("settings.toggle.armagnac.updates", isOn: $armagnacUpdate)
+                .disabled(true)
+            Toggle("settings.toggle.armagnacwine.updates", isOn: $checkArmagnacWineUpdates)
+                .disabled(true)
         }
+        .formStyle(.grouped)
+        .fixedSize(horizontal: false, vertical: true)
+        .frame(width: ViewWidth.medium)
     }
 }
 
 #Preview {
-    SettingsView()
+    UpdateSettingsView()
 }
